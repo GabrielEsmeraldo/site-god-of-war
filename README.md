@@ -31,4 +31,4 @@ Esse projeto foi desenvolvido com as seguintes bibliotecas:
 - Swipper
 - AOS Animate
 
-Feito com ♥ by Gabriel
+Feito com ♥ by Gabriel Esmeraldo
