@@ -1,0 +1,106 @@
+html {
+  overflow-x: hidden;
+}
+
+.subtitle {
+  display: flex;
+  gap: 0.94rem;
+
+  span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.38rem;
+  }
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.75rem;
+  line-height: 97.5%;
+  font-stretch: 110;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 130%;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 160%;
+}
+
+.card-character {
+  width: 100%;
+  max-width: 24rem;
+  height: 38.5rem;
+
+  .character {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 24rem;
+      height: 32.5rem;
+      width: 100%;
+      transition: all 0.3s;
+    }
+
+    button {
+      bottom: 0;
+      position: absolute;
+      background-color: #3265EA;
+      padding: 1.13rem 2.25rem;
+      opacity: 0;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #5380F5;
+      }
+    }
+  }
+
+  .info {
+    margin-top: 1.5rem;
+    
+
+    h3 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 0.44rem;
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.88rem;
+      line-height: 0.94rem;
+    }
+  }
+
+  &:hover {
+    .character {
+      img {
+        transform: scale(1.1);
+      }
+
+      button {
+        opacity: 1;
+        bottom: 3.56rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
